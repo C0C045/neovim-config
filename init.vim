@@ -18,9 +18,11 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 Plug 'tpope/vim-commentary'
 Plug 'Yggdroot/indentLine'
 Plug 'scrooloose/nerdtree'
+Plug 'jiangmiao/auto-pairs'
 
 " Desarrollo web
 Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mattn/emmet-vim'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
@@ -44,6 +46,11 @@ let g:prettier#tab_width = 4
 "Emmet
 let g:user_emmet_mode='n'
 let g:user_emmet_leader_key=','
+let g:user_emmet_settings={
+            \ 'javascript':{
+                \ 'extends':'jsx'
+              \ }
+  \ }
 
 "Coc Prettier Config
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
