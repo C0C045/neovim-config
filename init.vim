@@ -54,7 +54,7 @@ let g:user_emmet_settings={
 
 "Coc Prettier Config
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-nnoremap <C-D> :Prettier<CR>
+nnoremap <C-P> :Prettier<CR>
 
 "Commentary Config
 nnoremap <space>/ :Commentary<CR>
@@ -64,6 +64,7 @@ vnoremap <space>/ :Commentary<CR>
 let NERDTreeQuitOnOpen=1
 nnoremap <C-N> :NERDTreeToggle<CR>
 nnoremap <C-L> :bnext<CR>
+nnoremap <C-H> :bprevious<CR>
 
 " Tema
 let g:moonflyItalicComments = 1
