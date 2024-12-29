@@ -15,7 +15,7 @@ return {
   {
     "rcarriga/nvim-notify",
     opts = {
-      timeout = 10000,
+      timeout = 6000,
     },
   },
 
@@ -85,25 +85,6 @@ return {
       opts.scroll = {
         enable = false,
       }
-    end,
-  },
-
-  -- logo
-  {
-    "nvimdev/dashboard-nvim",
-    event = "VimEnter",
-    opts = function(_, opts)
-      local logo = [[
- ██████╗ ██████╗  ██████╗ ██████╗ 
-██╔════╝██╔═████╗██╔════╝██╔═████╗
-██║     ██║██╔██║██║     ██║██╔██║
-██║     ████╔╝██║██║     ████╔╝██║
-╚██████╗╚██████╔╝╚██████╗╚██████╔╝
- ╚═════╝ ╚═════╝  ╚═════╝ ╚═════╝ 
-                                  
-      ]]
-      logo = string.rep("\n", 8) .. logo .. "\n\n"
-      opts.config.header = vim.split(logo, "\n")
     end,
   },
 }

@@ -5,14 +5,14 @@ return {
       vim.list_extend(opts.ensure_installed, {
         "stylua",
         "selene",
-        "luacheck",
         "shellcheck",
-        "tailwindcss-language-server",
+        -- "tailwindcss-language-server",
         "typescript-language-server",
         "css-lsp",
         "emmet-language-server",
-        "html-lsp",
+        -- "html-lsp",
         "pyright",
+        "gopls",
       })
     end,
   },
