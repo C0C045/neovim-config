@@ -6,7 +6,7 @@ return {
         "stylua",
         "selene",
         "shellcheck",
-        -- "tailwindcss-language-server",
+        "tailwindcss-language-server",
         "typescript-language-server",
         "css-lsp",
         "emmet-language-server",
