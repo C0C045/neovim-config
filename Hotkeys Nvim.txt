@@ -27,10 +27,12 @@ ci + one symbol = delete the words between the symbol.
 visual mode + h or l = select words
 shift + a = enter to the insert mode on the end of the line.
 :set nowrap = desable the wrap mode of neovim.
+crtl + / = open terminal
 
 ----------------------------KEYMAPS LAZYVIM----------------------------
 space + l = open de update panel of lazyvim.
 space + e = open the neotree.
+space + c = conform.nvim
 space + cm = open mason language.
 space + cr = rename a variable.
 shift + K = view suggestions of a word
