@@ -10,7 +10,7 @@ return {
         "typescript-language-server",
         "css-lsp",
         "emmet-language-server",
-        -- "html-lsp",
+        "html-lsp",
         "pyright",
         "gopls",
       })
