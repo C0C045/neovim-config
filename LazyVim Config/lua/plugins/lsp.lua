@@ -12,7 +12,7 @@ return {
         "emmet-language-server",
         "html-lsp",
         "pyright",
-        "gopls",
+        -- "gopls",
       })
     end,
   },
