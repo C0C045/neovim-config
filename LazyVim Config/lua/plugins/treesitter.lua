@@ -12,18 +12,16 @@ return {
         "java",
         "scss",
         "sql",
+        "tsx",
       },
     },
-    config = function(_, opts)
-      require("nvim-treesitter.configs").setup(opts)
-
-      --MDX
-      vim.filetype.add({
-        extension = {
-          mdx = "mdx",
-        },
+    config = function()
+      require('lazy').setup({
+        'nvim-treesitter/nvim-treesitter',
+        lazy = false,
+        branch = 'main',
+        build = ':TSUpdate'
       })
-      vim.treesitter.language.register("markdown", "mdx")
     end,
   },
 }

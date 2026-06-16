@@ -161,7 +161,7 @@ return {
   },
   { "folke/flash.nvim", enabled = false },
   {
-    "echasnovski/mini.hipatterns",
+    "nvim-mini/mini.hipatterns",
     event = "BufReadPre",
     opts = {
       highlighters = {

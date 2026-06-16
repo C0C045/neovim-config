@@ -23,7 +23,7 @@ return {
   {
     "akinsho/bufferline.nvim",
     keys = {
-      { "<Tab>", "<Cmd>BufferLineCycleNext<CR>", desc = "Next tab" },
+      { "<Tab>",   "<Cmd>BufferLineCycleNext<CR>", desc = "Next tab" },
       { "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", desc = "Prev tab" },
     },
     opts = {
@@ -79,7 +79,7 @@ return {
 
   -- animations
   {
-    "echasnovski/mini.animate",
+    "nvim-mini/mini.animate",
     event = "VeryLazy",
     opts = function(_, opts)
       opts.scroll = {
@@ -88,19 +88,19 @@ return {
     end,
   },
 
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    config = function ()
-      require("neo-tree").setup({
-        filesystem = {
-          filtered_items = {
-            visible = false, -- when true, they will just be displayed differently than normal items
-            hide_dotfiles = false,
-            hide_gitignored = false,
-            hide_hidden = false,
-          },
-        },
-      })
-    end
-  }
+  -- {
+  --   "nvim-neo-tree/neo-tree.nvim",
+  --   config = function()
+  --     require("neo-tree").setup({
+  --       filesystem = {
+  --         filtered_items = {
+  --           visible = false, -- when true, they will just be displayed differently than normal items
+  --           hide_dotfiles = false,
+  --           hide_gitignored = false,
+  --           hide_hidden = false,
+  --         },
+  --       },
+  --     })
+  --   end,
+  -- },
 }
